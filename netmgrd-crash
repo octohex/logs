@@ -1,0 +1,1111 @@
+--------- beginning of crash
+07-08 14:58:27.512  3789  5044 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7ef81e5000 in tid 5044 (netmgrd)
+07-08 14:58:27.647  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 14:58:27.649  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 14:58:27.651  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 14:58:27.654  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 14:58:27.656  3780  3780 F DEBUG   : pid: 3789, tid: 5044, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 14:58:27.656  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7ef81e5000
+07-08 14:58:27.667  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 3789
+07-08 14:58:27.713  3780  3780 F DEBUG   :     x0   0000007ef81e4604  x1   0000007ef81e5000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 14:58:27.714  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 14:58:27.714  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 14:58:27.715  3780  3780 F DEBUG   :     x12  0000007f07647517  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 14:58:27.716  3780  3780 F DEBUG   :     x16  0000007f69e88d10  x17  0000007f69df8be4  x18  0000007f076475a0  x19  0000007f07647524
+07-08 14:58:27.716  3780  3780 F DEBUG   :     x20  0000007f07647628  x21  0000007f07647530  x22  0000005585b999da  x23  00000000ffffffff
+07-08 14:58:27.717  3780  3780 F DEBUG   :     x24  0000007f07647bc8  x25  0000000000000000  x26  0000007ef81e4604  x27  00000000fffffff8
+07-08 14:58:27.717  3780  3780 F DEBUG   :     x28  0000007f07647570  x29  0000007f076473a0  x30  0000007f69e3b7bc
+07-08 14:58:27.718  3780  3780 F DEBUG   :     sp   0000007f076473a0  pc   0000007f69df8bf4  pstate 0000000060000000
+07-08 14:58:27.728  3780  3780 F DEBUG   : 
+07-08 14:58:27.728  3780  3780 F DEBUG   : backtrace:
+07-08 14:58:27.729  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 14:58:27.729  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 14:58:27.730  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 14:58:27.730  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 14:58:27.731  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 14:58:27.731  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 14:58:27.732  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 14:58:27.732  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 14:58:27.733  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 14:58:27.733  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 14:58:27.734  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 14:58:27.734  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 14:58:27.735  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 14:58:27.735  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 14:58:27.736  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 14:58:27.936  3780  3780 F DEBUG   : 
+07-08 14:58:27.936  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_08
+[...]
+07-08 17:03:51.614 26691 26745 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7f12d1d000 in tid 26745 (netmgrd)
+07-08 17:03:51.720  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 17:03:51.721  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 26691
+07-08 17:03:51.722  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 17:03:51.722  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 17:03:51.723  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 17:03:51.723  3780  3780 F DEBUG   : pid: 26691, tid: 26745, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 17:03:51.724  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7f12d1d000
+07-08 17:03:51.729  3780  3780 F DEBUG   :     x0   0000007f12d1c604  x1   0000007f12d1d000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 17:03:51.730  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 17:03:51.730  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 17:03:51.731  3780  3780 F DEBUG   :     x12  0000007f21e7a687  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 17:03:51.731  3780  3780 F DEBUG   :     x16  0000007f55c32d10  x17  0000007f55ba2be4  x18  0000007f21e7a710  x19  0000007f21e7a694
+07-08 17:03:51.732  3780  3780 F DEBUG   :     x20  0000007f21e7a798  x21  0000007f21e7a6a0  x22  0000005555f1a9da  x23  00000000ffffffff
+07-08 17:03:51.732  3780  3780 F DEBUG   :     x24  0000007f21e7ad38  x25  0000000000000000  x26  0000007f12d1c604  x27  00000000fffffff8
+07-08 17:03:51.733  3780  3780 F DEBUG   :     x28  0000007f21e7a6e0  x29  0000007f21e7a510  x30  0000007f55be57bc
+07-08 17:03:51.734  3780  3780 F DEBUG   :     sp   0000007f21e7a510  pc   0000007f55ba2bf4  pstate 0000000060000000
+07-08 17:03:51.749  3780  3780 F DEBUG   : 
+07-08 17:03:51.749  3780  3780 F DEBUG   : backtrace:
+07-08 17:03:51.750  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 17:03:51.751  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 17:03:51.751  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 17:03:51.752  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 17:03:51.752  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 17:03:51.752  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 17:03:51.753  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 17:03:51.753  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 17:03:51.754  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 17:03:51.754  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 17:03:51.754  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 17:03:51.755  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 17:03:51.755  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 17:03:51.755  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 17:03:51.756  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 17:03:51.914  3780  3780 F DEBUG   : 
+07-08 17:03:51.914  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_09
+[...]
+07-08 17:04:13.431   654   725 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7f2017e000 in tid 725 (netmgrd)
+07-08 17:04:13.534  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 17:04:13.536  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 654
+07-08 17:04:13.537  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 17:04:13.539  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 17:04:13.541  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 17:04:13.542  3780  3780 F DEBUG   : pid: 654, tid: 725, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 17:04:13.544  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7f2017e000
+07-08 17:04:13.559  3780  3780 F DEBUG   :     x0   0000007f2017d604  x1   0000007f2017e000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 17:04:13.560  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 17:04:13.561  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 17:04:13.562  3780  3780 F DEBUG   :     x12  0000007f2fd464e7  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 17:04:13.563  3780  3780 F DEBUG   :     x16  0000007f56450d10  x17  0000007f563c0be4  x18  0000007f2fd46570  x19  0000007f2fd464f4
+07-08 17:04:13.564  3780  3780 F DEBUG   :     x20  0000007f2fd465f8  x21  0000007f2fd46500  x22  00000055559f19da  x23  00000000ffffffff
+07-08 17:04:13.565  3780  3780 F DEBUG   :     x24  0000007f2fd46b98  x25  0000000000000000  x26  0000007f2017d604  x27  00000000fffffff8
+07-08 17:04:13.567  3780  3780 F DEBUG   :     x28  0000007f2fd46540  x29  0000007f2fd46370  x30  0000007f564037bc
+07-08 17:04:13.568  3780  3780 F DEBUG   :     sp   0000007f2fd46370  pc   0000007f563c0bf4  pstate 0000000060000000
+07-08 17:04:13.579  3780  3780 F DEBUG   : 
+07-08 17:04:13.579  3780  3780 F DEBUG   : backtrace:
+07-08 17:04:13.580  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 17:04:13.581  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 17:04:13.582  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 17:04:13.583  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 17:04:13.584  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 17:04:13.585  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 17:04:13.586  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 17:04:13.587  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 17:04:13.588  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 17:04:13.589  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 17:04:13.589  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 17:04:13.590  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 17:04:13.591  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 17:04:13.591  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 17:04:13.592  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 17:04:13.777  3780  3780 F DEBUG   : 
+07-08 17:04:13.777  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_00
+07-08 17:04:15.661  4679  6687 D ConnectivityService: setProvNotificationVisibleIntent null visible=false networkType=MOBILE extraInfo=null highPriority=false
+07-08 17:04:18.653  4679  6687 D ConnectivityService: handlePromptUnvalidated 109
+07-08 17:04:43.340  4679  5028 W ProcessCpuTracker: Skipping unknown process pid 5357
+07-08 17:05:09.780  2769  2813 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7ecb684000 in tid 2813 (netmgrd)
+07-08 17:05:09.887  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 17:05:09.888  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 17:05:09.890  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 17:05:09.891  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 17:05:09.893  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 2769
+07-08 17:05:09.896  3780  3780 F DEBUG   : pid: 2769, tid: 2813, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 17:05:09.898  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7ecb684000
+07-08 17:05:09.917  3780  3780 F DEBUG   :     x0   0000007ecb683974  x1   0000007ecb684000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 17:05:09.918  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 17:05:09.919  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 17:05:09.921  3780  3780 F DEBUG   :     x12  0000007edafb05e7  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 17:05:09.922  3780  3780 F DEBUG   :     x16  0000007f5d532d10  x17  0000007f5d4a2be4  x18  0000007edafb0670  x19  0000007edafb05f4
+07-08 17:05:09.925  3780  3780 F DEBUG   :     x20  0000007edafb06f8  x21  0000007edafb0600  x22  000000557ae009da  x23  00000000ffffffff
+07-08 17:05:09.926  3780  3780 F DEBUG   :     x24  0000007edafb0c98  x25  0000000000000000  x26  0000007ecb683974  x27  00000000fffffff8
+07-08 17:05:09.927  3780  3780 F DEBUG   :     x28  0000007edafb0640  x29  0000007edafb0470  x30  0000007f5d4e57bc
+07-08 17:05:09.928  3780  3780 F DEBUG   :     sp   0000007edafb0470  pc   0000007f5d4a2bf4  pstate 0000000060000000
+07-08 17:05:09.939  3780  3780 F DEBUG   : 
+07-08 17:05:09.939  3780  3780 F DEBUG   : backtrace:
+07-08 17:05:09.940  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 17:05:09.941  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 17:05:09.941  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 17:05:09.942  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 17:05:09.944  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 17:05:09.945  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 17:05:09.947  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 17:05:09.947  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 17:05:09.948  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 17:05:09.949  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 17:05:09.949  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 17:05:09.950  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 17:05:09.951  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 17:05:09.951  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 17:05:09.952  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 17:05:10.206  3780  3780 F DEBUG   : 
+07-08 17:05:10.206  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_01
+07-08 17:05:32.571  7939  7996 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7ed0b2a000 in tid 7996 (netmgrd)
+07-08 17:05:32.675  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 17:05:32.676  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 7939
+07-08 17:05:32.676  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 17:05:32.678  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 17:05:32.678  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 17:05:32.679  3780  3780 F DEBUG   : pid: 7939, tid: 7996, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 17:05:32.680  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7ed0b2a000
+07-08 17:05:32.692  3780  3780 F DEBUG   :     x0   0000007ed0b29604  x1   0000007ed0b2a000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 17:05:32.692  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 17:05:32.693  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 17:05:32.694  3780  3780 F DEBUG   :     x12  0000007ed3127f17  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 17:05:32.694  3780  3780 F DEBUG   :     x16  0000007f63850d10  x17  0000007f637c0be4  x18  0000007ed3127fa0  x19  0000007ed3127f24
+07-08 17:05:32.695  3780  3780 F DEBUG   :     x20  0000007ed3128028  x21  0000007ed3127f30  x22  00000055572f49da  x23  00000000ffffffff
+07-08 17:05:32.695  3780  3780 F DEBUG   :     x24  0000007ed31285c8  x25  0000000000000000  x26  0000007ed0b29604  x27  00000000fffffff8
+07-08 17:05:32.696  3780  3780 F DEBUG   :     x28  0000007ed3127f70  x29  0000007ed3127da0  x30  0000007f638037bc
+07-08 17:05:32.697  3780  3780 F DEBUG   :     sp   0000007ed3127da0  pc   0000007f637c0bf4  pstate 0000000060000000
+07-08 17:05:32.704  3780  3780 F DEBUG   : 
+07-08 17:05:32.704  3780  3780 F DEBUG   : backtrace:
+07-08 17:05:32.705  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 17:05:32.705  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 17:05:32.706  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 17:05:32.707  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 17:05:32.708  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 17:05:32.708  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 17:05:32.709  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 17:05:32.709  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 17:05:32.710  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 17:05:32.710  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 17:05:32.711  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 17:05:32.711  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 17:05:32.711  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 17:05:32.712  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 17:05:32.712  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 17:05:32.924  3780  3780 F DEBUG   : 
+07-08 17:05:32.924  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_02
+07-08 17:05:49.787 10014 10063 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7e94402000 in tid 10063 (netmgrd)
+07-08 17:05:49.894  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 17:05:49.895  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 17:05:49.896  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 17:05:49.897  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 10014
+07-08 17:05:49.898  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 17:05:49.901  3780  3780 F DEBUG   : pid: 10014, tid: 10063, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 17:05:49.902  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7e94402000
+07-08 17:05:49.914  3780  3780 F DEBUG   :     x0   0000007e94401604  x1   0000007e94402000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 17:05:49.915  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 17:05:49.916  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 17:05:49.917  3780  3780 F DEBUG   :     x12  0000007e97cc3857  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 17:05:49.917  3780  3780 F DEBUG   :     x16  0000007f46384d10  x17  0000007f462f4be4  x18  0000007e97cc38e0  x19  0000007e97cc3864
+07-08 17:05:49.918  3780  3780 F DEBUG   :     x20  0000007e97cc3968  x21  0000007e97cc3870  x22  00000055890fb9da  x23  00000000ffffffff
+07-08 17:05:49.918  3780  3780 F DEBUG   :     x24  0000007e97cc3f08  x25  0000000000000000  x26  0000007e94401604  x27  00000000fffffff8
+07-08 17:05:49.919  3780  3780 F DEBUG   :     x28  0000007e97cc38b0  x29  0000007e97cc36e0  x30  0000007f463377bc
+07-08 17:05:49.920  3780  3780 F DEBUG   :     sp   0000007e97cc36e0  pc   0000007f462f4bf4  pstate 0000000060000000
+07-08 17:05:49.928  3780  3780 F DEBUG   : 
+07-08 17:05:49.928  3780  3780 F DEBUG   : backtrace:
+07-08 17:05:49.929  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 17:05:49.930  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 17:05:49.930  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 17:05:49.931  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 17:05:49.931  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 17:05:49.932  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 17:05:49.932  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 17:05:49.933  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 17:05:49.933  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 17:05:49.934  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 17:05:49.934  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 17:05:49.935  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 17:05:49.935  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 17:05:49.936  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 17:05:49.936  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 17:05:50.149  3780  3780 F DEBUG   : 
+07-08 17:05:50.149  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_03
+07-08 17:06:06.512 11606 11659 F libc    : Fatal signal 11 (SIGSEGV), code 2, fault addr 0x7ee6a41000 in tid 11659 (netmgrd)
+07-08 17:06:06.616  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 17:06:06.617  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 11606
+07-08 17:06:06.619  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 17:06:06.620  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 17:06:06.621  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 17:06:06.621  3780  3780 F DEBUG   : pid: 11606, tid: 11659, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 17:06:06.622  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x7ee6a41000
+07-08 17:06:06.632  3780  3780 F DEBUG   :     x0   0000007ee6a40604  x1   0000007ee6a41000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 17:06:06.633  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 17:06:06.634  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 17:06:06.635  3780  3780 F DEBUG   :     x12  0000007ee86c4ad7  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 17:06:06.635  3780  3780 F DEBUG   :     x16  0000007f72f1ad10  x17  0000007f72e8abe4  x18  0000007ee86c4b60  x19  0000007ee86c4ae4
+07-08 17:06:06.637  3780  3780 F DEBUG   :     x20  0000007ee86c4be8  x21  0000007ee86c4af0  x22  000000557a7ff9da  x23  00000000ffffffff
+07-08 17:06:06.637  3780  3780 F DEBUG   :     x24  0000007ee86c5188  x25  0000000000000000  x26  0000007ee6a40604  x27  00000000fffffff8
+07-08 17:06:06.638  3780  3780 F DEBUG   :     x28  0000007ee86c4b30  x29  0000007ee86c4960  x30  0000007f72ecd7bc
+07-08 17:06:06.639  3780  3780 F DEBUG   :     sp   0000007ee86c4960  pc   0000007f72e8abf4  pstate 0000000060000000
+07-08 17:06:06.645  3780  3780 F DEBUG   : 
+07-08 17:06:06.645  3780  3780 F DEBUG   : backtrace:
+07-08 17:06:06.646  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 17:06:06.647  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 17:06:06.648  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 17:06:06.648  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 17:06:06.649  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 17:06:06.649  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 17:06:06.650  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 17:06:06.651  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 17:06:06.652  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 17:06:06.652  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 17:06:06.652  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 17:06:06.653  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 17:06:06.654  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 17:06:06.654  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 17:06:06.654  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 17:06:06.836  3780  3780 F DEBUG   : 
+07-08 17:06:06.836  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_04
+07-08 17:06:18.536 13134 13186 F libc    : Fatal signal 11 (SIGSEGV), code 2, fault addr 0x7f2faab000 in tid 13186 (netmgrd)
+07-08 17:06:18.639  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 17:06:18.640  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 17:06:18.640  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 17:06:18.641  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 17:06:18.641  3780  3780 F DEBUG   : pid: 13134, tid: 13186, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 17:06:18.642  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x7f2faab000
+07-08 17:06:18.643  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 13134
+07-08 17:06:18.651  3780  3780 F DEBUG   :     x0   0000007f2faaa604  x1   0000007f2faab000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 17:06:18.652  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 17:06:18.653  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 17:06:18.654  3780  3780 F DEBUG   :     x12  0000007f31964a67  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 17:06:18.654  3780  3780 F DEBUG   :     x16  0000007f752ccd10  x17  0000007f7523cbe4  x18  0000007f31964af0  x19  0000007f31964a74
+07-08 17:06:18.655  3780  3780 F DEBUG   :     x20  0000007f31964b78  x21  0000007f31964a80  x22  000000556b02d9da  x23  00000000ffffffff
+07-08 17:06:18.655  3780  3780 F DEBUG   :     x24  0000007f31965118  x25  0000000000000000  x26  0000007f2faaa604  x27  00000000fffffff8
+07-08 17:06:18.656  3780  3780 F DEBUG   :     x28  0000007f31964ac0  x29  0000007f319648f0  x30  0000007f7527f7bc
+07-08 17:06:18.656  3780  3780 F DEBUG   :     sp   0000007f319648f0  pc   0000007f7523cbf4  pstate 0000000060000000
+07-08 17:06:18.663  3780  3780 F DEBUG   : 
+07-08 17:06:18.663  3780  3780 F DEBUG   : backtrace:
+07-08 17:06:18.663  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 17:06:18.664  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 17:06:18.664  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 17:06:18.665  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 17:06:18.666  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 17:06:18.666  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 17:06:18.667  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 17:06:18.667  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 17:06:18.668  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 17:06:18.668  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 17:06:18.669  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 17:06:18.669  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 17:06:18.670  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 17:06:18.670  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 17:06:18.671  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 17:06:18.910  3780  3780 F DEBUG   : 
+07-08 17:06:18.910  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_05
+07-08 17:06:46.942 14188 14244 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7eeae81000 in tid 14244 (netmgrd)
+07-08 17:06:47.047  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 17:06:47.049  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 14188
+07-08 17:06:47.051  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 17:06:47.053  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 17:06:47.055  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 17:06:47.056  3780  3780 F DEBUG   : pid: 14188, tid: 14244, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 17:06:47.058  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7eeae81000
+07-08 17:06:47.070  3780  3780 F DEBUG   :     x0   0000007eeae80604  x1   0000007eeae81000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 17:06:47.071  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 17:06:47.071  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 17:06:47.072  3780  3780 F DEBUG   :     x12  0000007efaef60a7  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 17:06:47.072  3780  3780 F DEBUG   :     x16  0000007f3d824d10  x17  0000007f3d794be4  x18  0000007efaef6130  x19  0000007efaef60b4
+07-08 17:06:47.073  3780  3780 F DEBUG   :     x20  0000007efaef61b8  x21  0000007efaef60c0  x22  000000556615a9da  x23  00000000ffffffff
+07-08 17:06:47.074  3780  3780 F DEBUG   :     x24  0000007efaef6758  x25  0000000000000000  x26  0000007eeae80604  x27  00000000fffffff8
+07-08 17:06:47.074  3780  3780 F DEBUG   :     x28  0000007efaef6100  x29  0000007efaef5f30  x30  0000007f3d7d77bc
+07-08 17:06:47.075  3780  3780 F DEBUG   :     sp   0000007efaef5f30  pc   0000007f3d794bf4  pstate 0000000060000000
+07-08 17:06:47.082  3780  3780 F DEBUG   : 
+07-08 17:06:47.082  3780  3780 F DEBUG   : backtrace:
+07-08 17:06:47.082  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 17:06:47.083  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 17:06:47.084  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 17:06:47.084  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 17:06:47.085  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 17:06:47.085  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 17:06:47.086  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 17:06:47.087  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 17:06:47.087  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 17:06:47.088  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 17:06:47.088  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 17:06:47.089  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 17:06:47.089  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 17:06:47.090  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 17:06:47.090  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 17:06:47.326  3780  3780 F DEBUG   : 
+07-08 17:06:47.326  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_06
+07-08 17:07:03.319 16626 16679 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7ef9914000 in tid 16679 (netmgrd)
+07-08 17:07:03.375  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 17:07:03.376  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 16626
+07-08 17:07:03.378  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 17:07:03.381  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 17:07:03.382  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 17:07:03.384  3780  3780 F DEBUG   : pid: 16626, tid: 16679, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 17:07:03.385  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7ef9914000
+07-08 17:07:03.401  3780  3780 F DEBUG   :     x0   0000007ef9913604  x1   0000007ef9914000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 17:07:03.402  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 17:07:03.403  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 17:07:03.404  3780  3780 F DEBUG   :     x12  0000007f09155a97  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 17:07:03.405  3780  3780 F DEBUG   :     x16  0000007f716c4d10  x17  0000007f71634be4  x18  0000007f09155b20  x19  0000007f09155aa4
+07-08 17:07:03.405  3780  3780 F DEBUG   :     x20  0000007f09155ba8  x21  0000007f09155ab0  x22  00000055761239da  x23  00000000ffffffff
+07-08 17:07:03.406  3780  3780 F DEBUG   :     x24  0000007f09156148  x25  0000000000000000  x26  0000007ef9913604  x27  00000000fffffff8
+07-08 17:07:03.407  3780  3780 F DEBUG   :     x28  0000007f09155af0  x29  0000007f09155920  x30  0000007f716777bc
+07-08 17:07:03.407  3780  3780 F DEBUG   :     sp   0000007f09155920  pc   0000007f71634bf4  pstate 0000000060000000
+07-08 17:07:03.415  3780  3780 F DEBUG   : 
+07-08 17:07:03.415  3780  3780 F DEBUG   : backtrace:
+07-08 17:07:03.416  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 17:07:03.417  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 17:07:03.418  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 17:07:03.419  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 17:07:03.420  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 17:07:03.420  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 17:07:03.421  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 17:07:03.422  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 17:07:03.422  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 17:07:03.423  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 17:07:03.424  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 17:07:03.424  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 17:07:03.425  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 17:07:03.426  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 17:07:03.427  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 17:07:03.625  3780  3780 F DEBUG   : 
+07-08 17:07:03.625  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_07
+07-08 17:07:18.618 18009 18060 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x7f0eae3000 in tid 18060 (netmgrd)
+07-08 17:07:18.725  4679  6832 W NativeCrashListener: Couldn't find ProcessRecord for pid 18009
+07-08 17:07:18.727  3780  3780 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+07-08 17:07:18.730  3780  3780 F DEBUG   : Build fingerprint: 'Android/aosp_bullhead/bullhead:6.0.1/MTC19Z/2016.07.07.02.16.02:user/release-keys'
+07-08 17:07:18.731  3780  3780 F DEBUG   : Revision: 'rev_1.0'
+07-08 17:07:18.733  3780  3780 F DEBUG   : ABI: 'arm64'
+07-08 17:07:18.735  3780  3780 F DEBUG   : pid: 18009, tid: 18060, name: netmgrd  >>> /system/bin/netmgrd <<<
+07-08 17:07:18.736  3780  3780 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x7f0eae3000
+07-08 17:07:18.757  3780  3780 F DEBUG   :     x0   0000007f0eae2604  x1   0000007f0eae3000  x2   dfdfdfdfdfdfdfdf  x3   dfdfdfdfdfdfdfdf
+07-08 17:07:18.759  3780  3780 F DEBUG   :     x4   dfdfdfdfffffffff  x5   0000000000000000  x6   0000000000000000  x7   dededededededede
+07-08 17:07:18.762  3780  3780 F DEBUG   :     x8   ffffffffffffffff  x9   dededededededede  x10  ffffffffffffffff  x11  0101010101010101
+07-08 17:07:18.763  3780  3780 F DEBUG   :     x12  0000007f10fcd677  x13  0000000000000061  x14  000000007fffff9e  x15  0000000000000000
+07-08 17:07:18.764  3780  3780 F DEBUG   :     x16  0000007f39964d10  x17  0000007f398d4be4  x18  0000007f10fcd700  x19  0000007f10fcd684
+07-08 17:07:18.765  3780  3780 F DEBUG   :     x20  0000007f10fcd788  x21  0000007f10fcd690  x22  000000559431b9da  x23  00000000ffffffff
+07-08 17:07:18.766  3780  3780 F DEBUG   :     x24  0000007f10fcdd28  x25  0000000000000000  x26  0000007f0eae2604  x27  00000000fffffff8
+07-08 17:07:18.767  3780  3780 F DEBUG   :     x28  0000007f10fcd6d0  x29  0000007f10fcd500  x30  0000007f399177bc
+07-08 17:07:18.768  3780  3780 F DEBUG   :     sp   0000007f10fcd500  pc   0000007f398d4bf4  pstate 0000000060000000
+07-08 17:07:18.780  3780  3780 F DEBUG   : 
+07-08 17:07:18.780  3780  3780 F DEBUG   : backtrace:
+07-08 17:07:18.784  3780  3780 F DEBUG   :     #00 pc 000000000001abf4  /system/lib64/libc.so (strlen+16)
+07-08 17:07:18.785  3780  3780 F DEBUG   :     #01 pc 000000000005d7b8  /system/lib64/libc.so (__vfprintf+8896)
+07-08 17:07:18.786  3780  3780 F DEBUG   :     #02 pc 0000000000075cd4  /system/lib64/libc.so (snprintf+336)
+07-08 17:07:18.787  3780  3780 F DEBUG   :     #03 pc 000000000005d124  /system/bin/netmgrd
+07-08 17:07:18.787  3780  3780 F DEBUG   :     #04 pc 000000000005cd60  /system/bin/netmgrd
+07-08 17:07:18.788  3780  3780 F DEBUG   :     #05 pc 000000000005d858  /system/bin/netmgrd
+07-08 17:07:18.789  3780  3780 F DEBUG   :     #06 pc 000000000005dad8  /system/bin/netmgrd
+07-08 17:07:18.790  3780  3780 F DEBUG   :     #07 pc 0000000000059b74  /system/bin/netmgrd
+07-08 17:07:18.790  3780  3780 F DEBUG   :     #08 pc 0000000000059ba4  /system/bin/netmgrd
+07-08 17:07:18.791  3780  3780 F DEBUG   :     #09 pc 00000000000595f8  /system/bin/netmgrd
+07-08 17:07:18.792  3780  3780 F DEBUG   :     #10 pc 000000000002dea0  /system/bin/netmgrd
+07-08 17:07:18.793  3780  3780 F DEBUG   :     #11 pc 0000000000037d38  /system/bin/netmgrd
+07-08 17:07:18.794  3780  3780 F DEBUG   :     #12 pc 000000000003ecc0  /system/bin/netmgrd
+07-08 17:07:18.794  3780  3780 F DEBUG   :     #13 pc 00000000000486c4  /system/bin/netmgrd
+07-08 17:07:18.795  3780  3780 F DEBUG   :     #14 pc 000000000000b760  /vendor/lib64/libdsutils.so (stm2_process_input+492)
+07-08 17:07:19.018  3780  3780 F DEBUG   : 
+07-08 17:07:19.018  3780  3780 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_08
+[...]
+07-08 23:13:37.847  4679  5028 W ProcessCpuTracker: Skipping unknown process pid 23508
+07-08 23:13:44.116  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:44.304  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:44.416  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:45.339  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:45.429  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:45.660  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:45.759  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:46.770  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:46.876  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:47.108  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:47.224  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:47.829  3806  3806 E QCALOG  : [MessageQ] ProcessNewMessage: [LOWI-SERVER] unknown deliver target [OS-Agent]
+07-08 23:13:47.893  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:47.967  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:48.129  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:48.286  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:49.175  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:49.258  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:49.487  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:49.601  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:49.690  4679  6685 D WifiStateMachine: L2Connected CMD_START_SCAN source -2 348, 350 -> obsolete
+07-08 23:13:50.443  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:50.529  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:50.717  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:50.846  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:51.770  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:51.868  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:52.140  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:52.247  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:53.028  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:53.130  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:53.342  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:53.458  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:54.285  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:54.380  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:54.607  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:54.719  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:55.570  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:55.650  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:55.833  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:55.949  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:56.860  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:56.938  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:57.213  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:57.320  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:58.158  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:58.239  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:58.555  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:58.672  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:13:59.448  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:13:59.560  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:13:59.759  3778  4993 E Netd    : duplicate netId 10
+07-08 23:13:59.897  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:00.700  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:00.778  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:01.010  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:01.117  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:02.048  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:02.148  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:02.429  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:02.535  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:03.267  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:03.350  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:03.562  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:03.669  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:04.529  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:04.607  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:04.796  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:04.875 30222 30222 W Binder_B: type=1400 audit(0.0:102061): avc: denied { ioctl } for path="socket:[58282]" dev="sockfs" ino=58282 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+07-08 23:14:04.875 30222 30222 W Binder_B: type=1400 audit(0.0:102062): avc: denied { ioctl } for path="socket:[58282]" dev="sockfs" ino=58282 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+07-08 23:14:04.875  4679  5035 I PowerManagerService: Going to sleep due to screen timeout (uid 1000)...
+07-08 23:14:05.062  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:05.236  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:05.319  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:05.422  4679  5035 I sensors : activate
+07-08 23:14:05.423  4679  5035 V KeyguardServiceDelegate: onScreenTurnedOff()
+07-08 23:14:05.425  4679  6366 I hubconnection: sensorhub said: 'activate 31 enable:0'
+07-08 23:14:05.426  4679  5035 I sensors : activate
+07-08 23:14:05.427   372   372 D SurfaceFlinger: Set power mode=0, type=0 flinger=0x7f27b0a000
+07-08 23:14:05.428   372   372 D qdhwcomposer: hwc_setPowerMode: Setting mode 0 on display: 0
+07-08 23:14:05.429  4679  5033 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+07-08 23:14:05.431  4679  6366 I hubconnection: sensorhub said: 'activate 7 enable:0'
+07-08 23:14:05.530  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:05.546   372   577 I qdhwcomposer: handle_blank_event: dpy:0 panel power state: 0
+07-08 23:14:05.548   372   372 D qdhwcomposer: hwc_setPowerMode: Done setting mode 0 on display 0
+07-08 23:14:05.549  4679  6705 D SurfaceControl: Excessive delay in setPowerMode(): 121ms
+07-08 23:14:05.550  4679  5035 I QCOMPowerHAL: Got set_interactive hint
+07-08 23:14:05.552  4679  5035 I DreamManagerService: Entering dreamland.
+07-08 23:14:05.552  4679  5035 I PowerManagerService: Dozing...
+07-08 23:14:05.578  6818  6818 W Binder_6: type=1400 audit(0.0:102063): avc: denied { ioctl } for path="socket:[3117686]" dev="sockfs" ino=3117686 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+07-08 23:14:05.578  6818  6818 W Binder_6: type=1400 audit(0.0:102064): avc: denied { ioctl } for path="socket:[3117686]" dev="sockfs" ino=3117686 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+07-08 23:14:05.583  4679 30221 I sensors : batch
+07-08 23:14:05.584  4679 30221 I sensors : activate
+07-08 23:14:05.589  4679  6366 I hubconnection: sensorhub said: 'batch 21 flags:0, sampling_rate_Hz:1000.00, max_report_latency_us:0'
+07-08 23:14:05.590  4679  6685 E native  : do suspend true
+07-08 23:14:05.591  3783  6338 D audio_hw_primary: adev_set_parameters: enter: screen_state=off
+07-08 23:14:05.592  4679  6366 I hubconnection: sensorhub said: 'activate 21 enable:1'
+07-08 23:14:05.649  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:06.586  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:06.693  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:06.934  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:07.040  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:07.726  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:07.821  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:08.037  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:08.154  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:09.036  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:09.119  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:09.309  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:09.437  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:10.007  6853  6853 D PhoneStatusBar: disable: < expand ICONS* alerts SYSTEM_INFO* back home recent clock search quick_settings >
+07-08 23:14:10.080  6853  6853 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME* RECENT* clock SEARCH* quick_settings >
+07-08 23:14:10.100  6853  6853 W PathParser: Points are too far apart 4.030360828967057
+07-08 23:14:10.100  6853  6853 W PathParser: Points are too far apart 4.030360538880159
+07-08 23:14:10.291  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:10.362  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:10.602  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:10.722  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:11.573  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:11.652  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:12.079  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:12.199  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:12.379  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:12.458  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:13.022  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:13.164  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:13.347  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:13.428  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:13.712  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:13.715  3778  4993 E FrameworkListener: read() failed (Connection reset by peer)
+07-08 23:14:13.832  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:14.135  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:14.221  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:14.487  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:14.594  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:15.419  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:15.510  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:15.745  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:15.859  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:16.699  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:16.778  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:16.947  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:17.070  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:18.141  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:18.268  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:18.544  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:18.657  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:19.274  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:19.365  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:19.553  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:19.668  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:20.532  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:20.609  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:20.811  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:20.917  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:21.912  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:22.054  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:22.270  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:22.459  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:23.097  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:23.178  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:23.412  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:23.528  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:24.469  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:24.566  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:24.783  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:24.895  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:25.675  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:25.774  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:26.056  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:26.178  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:26.973  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:27.068  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:27.275  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:27.399  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:28.214  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:28.290  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:28.576  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:28.684  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:29.538   373   373 I rmt_storage: rmt_storage_connect_cb: clnt_h=0x47 conn_h=0x7f042e10f0
+07-08 23:14:29.539   373   373 I rmt_storage: rmt_storage_rw_iovec_cb: /boot/modem_fs2: clnt_h=0xdfdfdfdfdfdfdfdf: req_h=0x47 msg_id=3: R/W request received
+07-08 23:14:29.539   373   373 I rmt_storage: wakelock acquired: 1, error no: 42
+07-08 23:14:29.540   373   788 I rmt_storage: rmt_storage_client_thread: /boot/modem_fs2: clnt_h=0xdfdfdfdfdfdfdfdf Unblock worker thread (th_id: 545509462016)
+07-08 23:14:29.571  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:29.661  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:29.972  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:30.039   373   788 I rmt_storage: rmt_storage_client_thread: /boot/modem_fs2: clnt_h=0xdfdfdfdfdfdfdfdf: req_h=0x47 msg_id=3: Bytes written = 1572864
+07-08 23:14:30.040   373   788 I rmt_storage: rmt_storage_client_thread: /boot/modem_fs2: clnt_h=0xdfdfdfdfdfdfdfdf: req_h=0x47 msg_id=3: Send response: res=0 err=0
+07-08 23:14:30.041   373   788 I rmt_storage: rmt_storage_client_thread: /boot/modem_fs2: clnt_h=0xdfdfdfdfdfdfdfdf About to block rmt_storage client thread (th_id: 545509462016) wakelock released: 1, error no: 0
+07-08 23:14:30.041   373   788 I rmt_storage: 
+07-08 23:14:30.042   373   373 I rmt_storage: rmt_storage_disconnect_cb: clnt_h=0x47 conn_h=0x7f042e10f0
+07-08 23:14:30.084  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:30.773  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:30.850  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:31.111  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:31.217  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:32.060  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:32.143  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:32.371  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:32.474  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:33.353  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:33.429  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:33.604  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:33.707  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:34.610  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:34.701  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:34.967  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:35.077  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:35.898  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:35.973  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:36.285  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:36.396  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:37.171  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:37.283  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:37.527  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:37.635  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:38.487  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:38.582  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:38.750  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:38.858  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:39.732  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:39.808  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:39.983  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:40.090  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:41.028  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:41.108  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:41.473  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:41.588  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:41.762  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:41.845  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:42.018  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:42.140  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:42.985  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:43.073  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:43.288  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:43.398  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:44.244  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:44.351  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:44.542  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:44.644  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:45.535  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:45.635  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:45.855  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:45.967  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:46.854  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:46.963  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:47.180  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:47.296  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:47.830  3806  3806 E QCALOG  : [MessageQ] ProcessNewMessage: [LOWI-SERVER] unknown deliver target [OS-Agent]
+07-08 23:14:48.002 30222 30222 W Binder_B: type=1400 audit(0.0:102065): avc: denied { ioctl } for path="socket:[3130939]" dev="sockfs" ino=3130939 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+07-08 23:14:48.002 30222 30222 W Binder_B: type=1400 audit(0.0:102066): avc: denied { ioctl } for path="socket:[3130939]" dev="sockfs" ino=3130939 ioctlcmd=7704 scontext=u:r:system_server:s0 tcontext=u:r:system_server:s0 tclass=unix_stream_socket permissive=0
+[...]
+07-08 23:14:53.299  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:53.403  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:53.696  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:53.817  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:54.480  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:54.563  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:54.818  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:54.933  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:55.779  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:55.904  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:56.226  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:56.340  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:56.526  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:56.609  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:56.848  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:56.959  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:57.671  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:57.748  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:57.994  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:58.107  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:58.945  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:59.039  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:14:59.379  3778  4993 E Netd    : duplicate netId 10
+07-08 23:14:59.495  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:14:59.661  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:14:59.758  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:00.009  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:00.130  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:00.868  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:00.949  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:01.140  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:01.284  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:02.263  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:02.387  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:02.556  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:02.679  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:03.400  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:03.477  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:03.664  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:03.779  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:04.728  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:04.817  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:05.024  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:05.138  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:05.983  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:06.069  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:06.297  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:06.408  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:07.264  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:07.345  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:07.523  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:07.640  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:08.525  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:08.599  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:08.859  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:08.967  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:09.810  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:09.914  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102070): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102071): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102072): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102073): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102074): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102075): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102076): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102077): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102078): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102079): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102080): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102081): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102082): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102083): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102084): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102085): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102086): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102087): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102088): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102089): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102090): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102091): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102092): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102093): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102094): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102095): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102096): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.028  3810  3810 W perfd   : type=1400 audit(0.0:102097): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:15:10.136  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:10.248  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:11.102  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:11.196  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:11.373  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:11.477  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:12.393  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:12.474  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:12.718  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:12.832  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:13.648  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:13.735  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:13.992  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:14.117  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:14.957  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:15.068  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:15.353  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:15.464  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:16.207  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:16.286  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:16.542  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:16.646  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:17.493  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:17.579  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:17.773  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:17.879  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:18.961  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:19.151  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:19.420  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:19.544  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:20.062  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:20.180  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:20.421  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:20.533  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:21.432  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:21.528  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:21.758  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:21.860  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:22.616  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:22.704  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:22.991  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:23.103  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:24.002  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:24.109  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:24.425  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:24.536  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:25.285  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:25.377  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:25.615  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:25.732  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:26.455  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:26.536  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:26.763  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:26.879  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:27.784  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:27.866  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:28.116  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:28.247  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:29.026  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:29.110  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:29.387  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:29.497  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:30.301  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:30.381  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:30.569  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:30.680  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:31.604  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:31.697  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:31.940  3778  4993 E Netd    : duplicate netId 10
+[...]
+07-08 23:15:33.044  4679  6705 D SurfaceControl: Excessive delay in setPowerMode(): 325ms
+07-08 23:15:33.068  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:33.157  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:34.115  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:34.182  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:34.311  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:34.390  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:34.783  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:34.866  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:35.053  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:35.160  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:36.057  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:36.143  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:36.357  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:36.434  6853  6853 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME RECENT clock SEARCH quick_settings >
+07-08 23:15:36.472  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:36.653  6853  6853 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME RECENT clock SEARCH quick_settings >
+07-08 23:15:37.323  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:37.396  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:37.975  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:38.150  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:38.172  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:38.413  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:38.506  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:39.248  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:39.330  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:39.590  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:39.704  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:40.534  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:40.609  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:41.359  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:41.490  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:41.667  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:41.748  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:41.978  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:42.092  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:42.459  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:42.544  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:42.773  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:42.900  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:43.858  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:44.007  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:44.440  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:44.560  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:44.711  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:44.782  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:45.011  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:45.106  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:45.301  4679  5035 I PowerManagerService: Going to sleep due to screen timeout (uid 1000)...
+07-08 23:15:45.640  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:45.718  3778  4993 D TetherController: Setting IP forward enable = 1
+[...]
+07-08 23:15:45.988  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:45.998  4679  6366 I hubconnection: sensorhub said: 'batch 21 flags:0, sampling_rate_Hz:1000.00, max_report_latency_us:0'
+07-08 23:15:45.998  4679  6366 I hubconnection: sensorhub said: 'activate 21 enable:1'
+07-08 23:15:45.999  4679  6685 E native  : do suspend true
+07-08 23:15:46.000  3783 23394 D audio_hw_primary: adev_set_parameters: enter: screen_state=off
+07-08 23:15:46.001  6853  6853 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME RECENT clock SEARCH quick_settings >
+07-08 23:15:46.021  6853  6853 D PhoneStatusBar: disable: < expand ICONS alerts SYSTEM_INFO back HOME RECENT clock SEARCH quick_settings >
+07-08 23:15:46.108  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:46.935  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:47.014  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:47.185  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:47.301  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:47.830  3806  3806 E QCALOG  : [MessageQ] ProcessNewMessage: [LOWI-SERVER] unknown deliver target [OS-Agent]
+07-08 23:15:48.254  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:48.340  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:48.554  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:48.658  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:49.493  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:49.571  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:49.846  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:49.958  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:50.793  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:50.879  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:51.047  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:51.184  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:52.122  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:52.222  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:52.459  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:52.570  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:53.352  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:53.436  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:53.652  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:53.764  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:54.625  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:54.707  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:54.946  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:55.057  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:55.939  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:56.028  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:56.307  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:56.419  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:57.192  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:57.276  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:57.513  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:57.618  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:58.466  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:58.548  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:15:58.824  3778  4993 E Netd    : duplicate netId 10
+07-08 23:15:58.942  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:15:59.845  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:15:59.976  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:00.287  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:00.418  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:00.585  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:00.674  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:00.891  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:00.999  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:01.663  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:01.744  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:01.947  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:02.046  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:02.939  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:03.020  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:03.237  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:03.344  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:04.222  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:04.297  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:04.461  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:04.567  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:05.500  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:05.578  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:05.756  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:05.857  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:06.946  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:07.056  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:07.269  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:07.386  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:08.067  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:08.142  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:08.344  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:08.456  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:09.338  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:09.449  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:09.675  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:09.809  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:10.736  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:10.837  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:11.066  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:11.174  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:11.901  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:11.980  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:12.246  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:12.358  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:13.224  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:13.308  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:13.529  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:13.642  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:14.441  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:14.566  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:14.795  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:14.908  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:15.753  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:15.852  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:16.132  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:16.250  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:17.024  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:17.114  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:17.306  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:17.407  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:18.339  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:18.424  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:18.709  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:18.819  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:19.576  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:19.654  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:19.890  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:20.008  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:20.898  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:20.992  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:21.181  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:21.290  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:22.156  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:22.251  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:22.428  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:22.571  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:23.604  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:23.718  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:23.966  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:24.077  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:24.703  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:24.804  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:25.006  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:25.114  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:25.984  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:26.079  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:26.280  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:26.393  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:27.245  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:27.338  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:27.531  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:27.638  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:28.583  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:28.714  4679  5034 W ProcessCpuTracker: Skipping unknown process pid 30107
+07-08 23:16:28.715  4679  5034 W ProcessCpuTracker: Skipping unknown process pid 30111
+07-08 23:16:28.722  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:29.127  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:29.254  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:29.423  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:29.507  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:29.731  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:29.840  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:30.443  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:30.519  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:30.733  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:30.837  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:31.753  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:31.854  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:32.069  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:32.182  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:33.007  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:33.089  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:33.339  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:33.447  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:34.325  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:34.407  4679  5034 W ProcessCpuTracker: Skipping unknown process pid 30346
+07-08 23:16:34.408  4679  5034 W ProcessCpuTracker: Skipping unknown process pid 30350
+07-08 23:16:34.411  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:34.643  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:34.757  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:35.606  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:35.709  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:35.911  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:36.047  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:36.866  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:36.949  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:37.207  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:37.323  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:37.590  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:37.677  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:37.940  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:38.041  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:38.762  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:38.835  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:39.068  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:39.181  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:40.061  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:40.141  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:40.325  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:40.451  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:41.324  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:41.402  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:41.602  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:41.707  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:42.633  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:42.708  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:42.878  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:43.004  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:43.953  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:44.042  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:44.257  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:44.360  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:45.198  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:45.280  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:45.453  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:45.579  3778  4993 D TetherController: Setting IP forward enable = 0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102473): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102474): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102475): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102476): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102477): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102478): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102479): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102480): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102481): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102482): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102483): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102484): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102485): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102486): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102487): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102488): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102489): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102490): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102491): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102492): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102493): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102494): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102495): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102496): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102497): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102498): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102499): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102500): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102501): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102502): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102503): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102504): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102505): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102506): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102507): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102508): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:45.968  3810  3810 W perfd   : type=1400 audit(0.0:102509): avc: denied { sys_ptrace } for capability=19 scontext=u:r:perfd:s0 tcontext=u:r:perfd:s0 tclass=capability permissive=0
+07-08 23:16:46.458  3778  4993 E Netd    : interface r_rmnet_data0 not assigned to any netId
+07-08 23:16:46.537  3778  4993 D TetherController: Setting IP forward enable = 1
+07-08 23:16:46.770  3778  4993 E Netd    : duplicate netId 10
+07-08 23:16:46.887  3778  4993 D TetherController: Setting IP forward enable = 0
+[and so on...]
